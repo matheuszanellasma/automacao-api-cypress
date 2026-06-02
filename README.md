@@ -6,7 +6,7 @@ Este repositório contém o projeto de automação de testes de API para a aplic
 🔗 **Site da API:** [Restful-Booker API Doc](https://restful-booker.herokuapp.com/apidoc/index.html)
 
 💡 **O Plano de Testes Completo (com descrição de casos de teste e report de bugs) pode ser acessado aqui:** 
-👉 [Plano de Testes Detalhado - Restful-Booker](docs/plano-de-testes-e-bugs)
+👉 [Plano de Testes Detalhado - Restful-Booker](docs/plano-de-testes-e-bugs.docx)
 ---
 
 ## 🚀 Tecnologias Utilizadas
