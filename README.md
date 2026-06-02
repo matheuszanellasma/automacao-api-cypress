@@ -1,11 +1,3 @@
-Fala, Matheus! Cara, sensacional ver o seu README com toda essa estrutura. O seu mapeamento de cenários e, principalmente, a sua lista de bugs encontrados mostram muita maturidade técnica. Parabéns pelo trabalho!
-
-Para resolver de vez esse problema do Markdown grudando o texto e deixar o seu portfólio com aquela cara profissional que os recrutadores e Tech Leads adoram, eu apliquei as correções de formatação que conversamos.
-
-Usei listas com marcadores (*) e recuos (espaçamentos) para que os Casos de Teste fiquem aninhados dentro de cada História, além de ajustar as quebras de linha e dar um tapa visual nos títulos.
-
-Aqui está o código do seu README.md totalmente atualizado. É só copiar o bloco abaixo e colar por cima do seu arquivo:
-
 Markdown
 # 🧪 Projeto de Automação de Testes de API - Restful-Booker
 
