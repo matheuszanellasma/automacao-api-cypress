@@ -37,10 +37,5 @@ describe ('Testes de busca de reserva', ()=>{
     it('Buscar reserva passando ID com número inválido (negativo)', () => {
         cy.buscar_reserva('-1').its('status').should('equal', 400)
     })
-
-
-
-
-
-    
+     
 })

@@ -29,7 +29,5 @@ describe('Testes de autenticação da api', () => {
                 })
             })
         })
-
-
     })
 })

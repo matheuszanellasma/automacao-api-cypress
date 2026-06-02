@@ -24,7 +24,6 @@ describe('Testes de atualizar reserva completa', () => {
                 cy.deletar_reserva(id_cadastro, token)
             })
         })
-
     })
 
 
@@ -42,7 +41,6 @@ describe('Testes de atualizar reserva completa', () => {
             cy.atualizar_reserva_completa({}, id_cadastro, token).its('status').should('equal', 400)
             cy.deletar_reserva(id_cadastro, token)
         })
-
     })
 
 
@@ -64,7 +62,5 @@ describe('Testes de atualizar reserva completa', () => {
                 })
             })
         })
-
     })
-
 })

@@ -27,7 +27,6 @@ describe('Testes de deletar reservas', () => {
             const id_cadastro = resultado_cadastro.body.bookingid
             cy.deletar_reserva(id_cadastro, token)
             cy.deletar_reserva(id_cadastro, token).its('status').should('equal', 404)
-
         })
     })
 
@@ -39,7 +38,6 @@ describe('Testes de deletar reservas', () => {
         { token: '', msg: 'vazio', status: 403 },
         { token: 'xpto', msg: 'inválido', status: 403 }
     ]
-
     
     cenarios_erro_token.forEach((cenario) => {
         it('Deletar reserva com token de auth ' + cenario.msg, () => {
@@ -50,7 +48,5 @@ describe('Testes de deletar reservas', () => {
                 cy.deletar_reserva(id_cadastro, token)
             })
         })
-
     })
-
 })
