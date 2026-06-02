@@ -1,4 +1,4 @@
-Markdown
+
 # 🧪 Projeto de Automação de Testes de API - Restful-Booker
 
 Este repositório contém o projeto de automação de testes de API para a aplicação **Restful-Booker**, uma API pública de gerenciamento de reservas de hotel. O objetivo deste projeto é garantir a qualidade, estabilidade e o funcionamento correto dos endpoints principais da aplicação.
