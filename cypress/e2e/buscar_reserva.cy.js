@@ -10,7 +10,7 @@ describe('Testes de busca de reserva', ()=>{
         })
     })
 
-    it('Buscar reserva com sucesso e validar todos os campos do body', () => {
+    it('Buscar reserva com sucesso ', { tags: 'smoke' }, () => {
         const reserva = gera_reserva()
         cy.cadastrar_reserva(reserva).then((resultado_cadastro) => {
             const id_cadastro = resultado_cadastro.body.bookingid

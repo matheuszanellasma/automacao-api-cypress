@@ -2,7 +2,7 @@
 
 describe('Testes de autenticação da api', () => {
 
-    it(('Autenticação com sucesso com credenciais válidas'), () => {
+    it(('Autenticação com sucesso com credenciais válidas'), { tags: 'smoke' }, () => {
         cy.autenticacao('admin', 'password123').then((resultado_autenticacao) => {
             expect(resultado_autenticacao.status).to.equal(200)
             expect(resultado_autenticacao.body.token).to.exist.and.to.be.a('string')

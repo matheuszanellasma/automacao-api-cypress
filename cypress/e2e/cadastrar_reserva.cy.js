@@ -10,7 +10,7 @@ describe('Testes de cadastro de reserva', () => {
         })
     })
 
-    it('Cadastro de reserva com sucesso', () => {
+    it('Cadastro de reserva com sucesso', { tags: 'smoke' }, () => {
         const reserva = gera_reserva()
         cy.cadastrar_reserva(reserva).then((resultado_cadastro) => {
             expect(resultado_cadastro.status).to.equal(200)

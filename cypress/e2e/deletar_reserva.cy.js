@@ -10,7 +10,7 @@ describe('Testes de deletar reservas', () => {
         })
     })
 
-    it('Deletar reserva com sucesso', () => {
+    it('Deletar reserva com sucesso', { tags: 'smoke' }, () => {
         const reserva = gera_reserva()
         cy.cadastrar_reserva(reserva).then((resultado_cadastro) => {
             const id_cadastro = resultado_cadastro.body.bookingid
