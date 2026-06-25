@@ -10,7 +10,7 @@ describe('Testes de atualizar reserva completa', () => {
         })
     })
 
-    it('Atualizar reserva com sucesso', { tags: 'smoke' }, () => {
+    it('Atualizar reserva com sucesso ', { tags: '@smoke' }, () => {
         const reserva = gera_reserva()
         const nova_reserva = gera_reserva()
         cy.cadastrar_reserva(reserva).then((resultado_cadastro) => {

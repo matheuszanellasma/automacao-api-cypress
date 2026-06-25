@@ -15,7 +15,7 @@ describe('Testes de atualizar parcialmente reservas', () => {
         lastname: 'Jordan'
     }
 
-    it('Atualizar parcialmente reserva com sucesso', { tags: 'smoke' }, () => {
+    it('Atualizar parcialmente reserva com sucesso', { tags: '@smoke' }, () => {
 
         const reserva = gera_reserva() 
 
@@ -39,11 +39,11 @@ describe('Testes de atualizar parcialmente reservas', () => {
         })
     })
 
-    it('Atualizar parcialmente reserva inexistente', () => {
+    it('Atualizar parcialmente reserva inexistente', { tags: '@leke' }, () => {
         cy.atualizar_reserva_parcial(reserva_parcial, 9999 , token).its('status').should('equal', 404)
     })
 
-    it('Atualizar parcialmente reserva com payload vazio', () => {
+    it('Atualizar parcialmente reserva com payload vazio', { tags: '@leke' }, () => {
         const reserva = gera_reserva()
         cy.cadastrar_reserva(reserva).then((resultado_cadastro) => {
             const id_cadastro = resultado_cadastro.body.bookingid
@@ -62,7 +62,7 @@ describe('Testes de atualizar parcialmente reservas', () => {
 
 
     cenarios_erro_token.forEach((cenario) => {
-        it('Atualizar parcialmente reserva com token de auth ' + cenario.msg, () => {
+        it('Atualizar parcialmente reserva com token de auth ' + cenario.msg, { tags: '@leke' }, () => {
             const reserva = gera_reserva()
             cy.cadastrar_reserva(reserva).then((resultado_cadastro) => {
                 const id_cadastro = resultado_cadastro.body.bookingid

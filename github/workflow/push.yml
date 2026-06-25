@@ -16,6 +16,3 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
-        env: 
-          CYPRESS_grepTags: smoke
-     
