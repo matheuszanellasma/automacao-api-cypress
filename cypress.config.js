@@ -1,13 +1,13 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-    allowCypressEnv: false,
-    projectId: "4ngizh",
+    reporter: 'mochawesome',
     e2e: {
         baseUrl: 'https://restful-booker.herokuapp.com',
+        allowCypressEnv: false,
+        projectId: "4ngizh",
         setupNodeEvents(on, config) {
-            // implement node event listeners here
+
         },
     },
 });
-

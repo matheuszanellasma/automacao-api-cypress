@@ -15,7 +15,7 @@ describe('Testes de atualizar parcialmente reservas', () => {
         lastname: 'Jordan'
     }
 
-    it('Atualizar parcialmente reserva com sucesso', { tags: '@smoke' }, () => {
+    it('Atualizar parcialmente reserva com sucesso @smoke', { tags: '@smoke' }, () => {
 
         const reserva = gera_reserva() 
 
