@@ -1,3 +1,4 @@
+![CI](https://github.com/matheuszanellasma/automacao-api-cypress/actions/workflows/push.yml/badge.svg)
 
 # 🧪 Projeto de Automação de Testes de API - Restful-Booker
 
